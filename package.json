@@ -33,7 +33,7 @@
     "open": "0.0.5",
     "puppeteer": "^1.0.0",
     "read": "~1.0.7",
-    "resume-schema": "latest",
+    "resume-schema": "github:jsonresume/resume-schema#v1.0.0",
     "resume-to-html": "latest",
     "resume-to-text": "latest",
     "should": "^11.1.0",
