@@ -74,7 +74,7 @@ describe('Register tests', function() {
     changeTheme({
       email: user.email,
       password: user.password,
-      theme: 'flat',
+      theme: 'even',
       changeTheme: true
     }, function(err, res) {
       should.not.exist(err);
@@ -112,7 +112,7 @@ describe('Register tests', function() {
   it('should publish guest resume', function(done) {
 
     var resumeJson = require('./resume.json');
-    var theme = 'flat'
+    var theme = 'even'
     var email = null;
     var password = null;
     var guest = true;

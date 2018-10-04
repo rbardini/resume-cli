@@ -60,7 +60,7 @@ Please npm install the theme you wish to use locally before attempting to export
 
 Options:
   - `--format <file type>` Example: `--format pdf`
-  - `--theme <name>` Example: `--theme flat`  
+  - `--theme <name>` Example: `--theme even`
 
 
 ## `resume register`
@@ -81,7 +81,7 @@ To log into a registered account. This will allow you to publish with requiring 
 This command will guide you through the publish process.
 
 Options:
-  - `--theme <name>` Style your resume. (Default: `flat`)
+  - `--theme <name>` Style your resume. (Default: `even`)
 
 
 ## `resume serve`
