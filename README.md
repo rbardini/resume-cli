@@ -1,16 +1,19 @@
 # resume-cli
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jsonresume/public?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Build Status](https://travis-ci.org/jsonresume/resume-cli.svg?branch=master)](https://travis-ci.org/jsonresume/resume-cli) [![Dependency Status](https://david-dm.org/jsonresume/resume-cli.svg)](https://david-dm.org/jsonresume/resume-cli) [![devDependency Status](https://david-dm.org/jsonresume/resume-cli/dev-status.svg)](https://david-dm.org/jsonresume/resume-cli#info=devDependencies)  [![](https://badge.fury.io/js/resume-cli.svg)](https://www.npmjs.org/package/resume-cli)
+[![Gitter](https://img.shields.io/gitter/room/jsonresume/public.svg)](https://gitter.im/jsonresume/public)
+[![Build status](https://img.shields.io/travis/rbardini/resume-cli.svg)](https://travis-ci.org/rbardini/resume-cli)
+[![Dependencies status](https://img.shields.io/david/rbardini/resume-cli.svg)](https://david-dm.org/rbardini/resume-cli)
+[![devDependencies status](https://img.shields.io/david/dev/rbardini/resume-cli.svg)](https://david-dm.org/rbardini/resume-cli?type=dev)
+[![npm package version](https://img.shields.io/npm/v/@rbardini/resume-cli.svg)](https://www.npmjs.com/package/@rbardini/resume-cli)
 
-This is the command line tool for [JSON Resume](https://jsonresume.org), the open source initiative to create a JSON-based standard for resumes.
+A command line interface for [JSON Resume](https://jsonresume.org), compatible with the
+bleeding edge [resume schema](https://github.com/jsonresume/resume-schema/tree/v1.0.0).
 
 [Read more...](https://jsonresume.org/schema/)
 
-## Donations
+## Donations (upstream)
 
-[![Bountysource](https://www.bountysource.com/badge/team?team_id=21303&style=bounties_received)](https://www.bountysource.com/teams/jsonresume/issues?utm_source=JSON%20Resume&utm_medium=shield&utm_campaign=bounties_received)
-[![Support via Gratipay](http://img.shields.io/gratipay/jsonresume.svg)](https://gratipay.com/jsonresume/)
+[![Bountysource](https://www.bountysource.com/badge/team?team_id=21303&style=bounties_received)](https://www.bountysource.com/teams/jsonresume/issues)
 [![tip for next commit](https://tip4commit.com/projects/43122.svg)](https://tip4commit.com/github/jsonresume/resume-cli)
 
 ## IRC
@@ -25,7 +28,7 @@ Or instead, you can use the web client:  [http://webchat.freenode.net](http://we
 Install the command-line tool:
 
 ```
-npm install -g resume-cli
+npm install -g @rbardini/resume-cli
 ```
 
 

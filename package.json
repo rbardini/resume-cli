@@ -1,14 +1,14 @@
 {
-  "name": "resume-cli",
+  "name": "@rbardini/resume-cli",
   "version": "0.4.19",
-  "description": "The JSON Resume command line interface",
+  "description": "A command line interface for JSON Resume, compatible with the bleeding edge resume schema",
   "main": "index.js",
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha test test/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rolandnsharp/resume-cli.git"
+    "url": "https://github.com/rbardini/resume-cli.git"
   },
   "license": "MIT",
   "bin": {
