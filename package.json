@@ -22,7 +22,7 @@
     "commander": "2.18.0",
     "dotenv": "6.0.0",
     "jsonlint": "1.6.3",
-    "jsonresume-theme-even": "0.1.0",
+    "jsonresume-theme-even": "0.2.0",
     "node-static": "0.7.11",
     "opn": "5.4.0",
     "puppeteer": "1.9.0",
