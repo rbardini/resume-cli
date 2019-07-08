@@ -11,17 +11,6 @@ bleeding edge [resume schema](https://github.com/jsonresume/resume-schema/tree/v
 
 [Read more...](https://jsonresume.org/schema/)
 
-## Donations (upstream)
-
-[![Bountysource](https://www.bountysource.com/badge/team?team_id=21303&style=bounties_received)](https://www.bountysource.com/teams/jsonresume/issues)
-[![tip for next commit](https://tip4commit.com/projects/43122.svg)](https://tip4commit.com/github/jsonresume/resume-cli)
-
-## IRC
-
-Use your favorite IRC client to join the `#jsonresume` channel on Freenode.  
-
-Or instead, you can use the web client:  [http://webchat.freenode.net](http://webchat.freenode.net?channels=%23jsonresume).
-
 
 # Getting Started
 
@@ -64,28 +53,6 @@ Please npm install the theme you wish to use locally before attempting to export
 Options:
   - `--format <file type>` Example: `--format pdf`
   - `--theme <name>` Example: `--theme even`
-
-
-## `resume register`
-
-_Registration is optional._
-
-To publish your resume to your account with a custom domain extension at 
-http://registry.jsonresume.org. You will first need to acquire login credentials.
-
-## `resume login`
-
-To log into a registered account. This will allow you to publish with requiring you to reenter your credentials.
-
-
-## `resume publish`
-
-
-This command will guide you through the publish process.
-
-Options:
-  - `--theme <name>` Style your resume. (Default: `even`)
-
 
 ## `resume serve`
 

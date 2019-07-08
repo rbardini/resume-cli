@@ -6,7 +6,6 @@ var lib = require(__dirname + '/lib');
 var program = require('commander');
 var colors = require('colors');
 var chalk = require('chalk');
-var read = require('read');
 var path = require('path');
 
 function getThemeName(theme) {
@@ -21,8 +20,7 @@ lib.preFlow(function(err, results) {
   program
     .usage("[command] [options]")
     .version(pkg.version)
-    .option('-t, --theme <theme name>', 'Specify theme for export or publish (default: even)', 'even')
-    .option('-F, --force', 'Used by `publish` - bypasses schema testing.')
+    .option('-t, --theme <theme name>', 'Specify theme used by `export` (default: even)', 'even')
     .option('-f, --format <file type extension>', 'Used by `export`.')
     .option('-r, --resume <resume filename>', 'Used by `serve` (default: resume.json)', path.join(process.cwd(), 'resume.json'))
     .option('-p, --port <port>', 'Used by `serve` (default: 4000)', 4000)
@@ -34,27 +32,6 @@ lib.preFlow(function(err, results) {
     .description('Initialize a resume.json file')
     .action(function() {
       lib.init()
-    });
-
-  program
-    .command('register')
-    .description('Register an account at https://registry.jsonresume.org')
-    .action(function() {
-      lib.register(resumeJson);
-    });
-
-  program
-    .command('login')
-    .description('Stores a user session.')
-    .action(function() {
-      lib.login(resumeJson);
-    });
-
-  program
-    .command('settings')
-    .description('Change theme, change password, delete account.')
-    .action(function() {
-      lib.settings(resumeJson, program, config);
     });
 
   program
@@ -73,13 +50,6 @@ lib.preFlow(function(err, results) {
       lib.exportResume(resumeJson, fileName, getThemeName(program.theme), program.format, function(err, fileName, format) {
         console.log(chalk.green('\nDone! Find your new', format, 'resume at:\n', path.resolve(process.cwd(), fileName + format)));
       });
-    });
-
-  program
-    .command('publish')
-    .description('Publish your resume to https://registry.jsonresume.org')
-    .action(function() {
-      lib.publish(resumeJson, program, config);
     });
 
   program
