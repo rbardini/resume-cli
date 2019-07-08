@@ -1,2 +1,2 @@
-require('dotenv').load();
+require('dotenv').config();
 var should = require('should');
