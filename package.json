@@ -15,25 +15,25 @@
     "resume": "index.js"
   },
   "dependencies": {
-    "async": "3.1.1",
+    "async": "3.2.0",
     "btoa": "1.2.1",
-    "chalk": "2.4.2",
+    "chalk": "3.0.0",
     "cli-spinner": "0.2.10",
     "colors": "1.4.0",
-    "commander": "2.20.0",
+    "commander": "4.1.1",
     "dotenv": "8.2.0",
     "jsonlint": "1.6.3",
-    "jsonresume-theme-even": "0.2.3",
+    "jsonresume-theme-even": "0.3.0",
     "node-static": "0.7.11",
-    "open": "6.4.0",
-    "puppeteer": "1.18.1",
+    "open": "7.0.2",
+    "puppeteer": "2.1.1",
     "read": "1.0.7",
     "resume-schema": "0.0.18",
-    "superagent": "5.2.1",
+    "superagent": "5.2.2",
     "terminal-menu": "2.1.1"
   },
   "devDependencies": {
-    "mocha": "6.1.4",
+    "mocha": "7.1.0",
     "should": "13.2.3"
   },
   "engines": {
