@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v0.1.3/schema.json",
   "basics": {
     "name": "Richard Hendriks",
     "label": "Programmer",
@@ -60,6 +61,7 @@
   "education": [
     {
       "institution": "University of Oklahoma",
+      "url": "https://www.ou.edu/",
       "area": "Information Technology",
       "studyType": "Bachelor",
       "startDate": "2011-06-01",
