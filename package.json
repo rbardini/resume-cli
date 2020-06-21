@@ -3,6 +3,9 @@
   "version": "0.9.0",
   "description": "A command line interface for JSON Resume, compatible with the bleeding edge resume schema",
   "main": "index.js",
+  "engines": {
+    "node": ">=10.18.1"
+  },
   "scripts": {
     "test": "mocha --exit"
   },
@@ -28,15 +31,15 @@
     "open": "7.0.3",
     "puppeteer": "2.1.1",
     "read": "1.0.7",
-    "resume-schema": "0.0.18",
+    "resume-schema": "0.1.3",
     "superagent": "5.2.2",
-    "terminal-menu": "2.1.1"
+    "terminal-menu": "2.1.1",
+    "util.promisify": "1.0.1",
+    "z-schema": "4.2.2",
+    "z-schema-errors": "0.2.1"
   },
   "devDependencies": {
     "mocha": "7.1.1",
     "should": "13.2.3"
-  },
-  "engines": {
-    "node": ">=8"
   }
 }

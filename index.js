@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 require('dotenv').config();
-var pkg = require(__dirname + '/package.json');
-var lib = require(__dirname + '/lib');
+var pkg = require('./package.json');
+var lib = require('./lib');
 var program = require('commander');
 var colors = require('colors');
 var chalk = require('chalk');
@@ -12,7 +12,7 @@ function getThemeName(theme) {
   return theme.match('jsonresume-theme-.*') ? theme : 'jsonresume-theme-' + theme;
 }
 
-lib.preFlow(function(err, results) {
+lib.preFlow(async function(err, results) {
 
   var resumeJson = results.getResume;
   var config = results.getConfig;
@@ -37,10 +37,8 @@ lib.preFlow(function(err, results) {
   program
     .command('test')
     .description('Schema validation test your resume.json')
-    .action(function() {
-      lib.test.validate(resumeJson, function(error, response) {
-        error && console.log(response.message);
-      });
+    .action(async function() {
+      await lib.test(resumeJson);
     });
 
   program
@@ -59,7 +57,7 @@ lib.preFlow(function(err, results) {
       lib.serve(program.port, getThemeName(program.theme), program.silent, program.dir, program.resume);
     });
 
-  program.parse(process.argv);
+  await program.parseAsync(process.argv);
 
   var validCommands = program.commands.map(function(cmd) {
     return cmd._name;
