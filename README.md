@@ -1,4 +1,6 @@
-# resume-cli
+> ⚠️ Fork no longer maintained in favor of original [jsonresume/resume-cli](https://github.com/jsonresume/resume-cli) project. All changes have been merged to the upstream repository and released in version 2.0.0.
+
+# @rbardini/resume-cli
 
 [![Gitter](https://img.shields.io/gitter/room/jsonresume/public.svg)](https://gitter.im/jsonresume/public)
 [![Build status](https://img.shields.io/travis/rbardini/resume-cli.svg)](https://travis-ci.org/rbardini/resume-cli)
